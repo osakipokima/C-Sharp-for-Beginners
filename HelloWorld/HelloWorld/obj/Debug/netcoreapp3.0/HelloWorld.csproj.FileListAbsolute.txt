@@ -1,0 +1,11 @@
+C:\Users\osaki\Documents\UDemy-C#-Course\HelloWorld\HelloWorld\bin\Debug\netcoreapp3.0\HelloWorld.exe
+C:\Users\osaki\Documents\UDemy-C#-Course\HelloWorld\HelloWorld\bin\Debug\netcoreapp3.0\HelloWorld.deps.json
+C:\Users\osaki\Documents\UDemy-C#-Course\HelloWorld\HelloWorld\bin\Debug\netcoreapp3.0\HelloWorld.runtimeconfig.json
+C:\Users\osaki\Documents\UDemy-C#-Course\HelloWorld\HelloWorld\bin\Debug\netcoreapp3.0\HelloWorld.runtimeconfig.dev.json
+C:\Users\osaki\Documents\UDemy-C#-Course\HelloWorld\HelloWorld\bin\Debug\netcoreapp3.0\HelloWorld.dll
+C:\Users\osaki\Documents\UDemy-C#-Course\HelloWorld\HelloWorld\bin\Debug\netcoreapp3.0\HelloWorld.pdb
+C:\Users\osaki\Documents\UDemy-C#-Course\HelloWorld\HelloWorld\obj\Debug\netcoreapp3.0\HelloWorld.csprojAssemblyReference.cache
+C:\Users\osaki\Documents\UDemy-C#-Course\HelloWorld\HelloWorld\obj\Debug\netcoreapp3.0\HelloWorld.AssemblyInfoInputs.cache
+C:\Users\osaki\Documents\UDemy-C#-Course\HelloWorld\HelloWorld\obj\Debug\netcoreapp3.0\HelloWorld.AssemblyInfo.cs
+C:\Users\osaki\Documents\UDemy-C#-Course\HelloWorld\HelloWorld\obj\Debug\netcoreapp3.0\HelloWorld.dll
+C:\Users\osaki\Documents\UDemy-C#-Course\HelloWorld\HelloWorld\obj\Debug\netcoreapp3.0\HelloWorld.pdb
