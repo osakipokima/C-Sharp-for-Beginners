@@ -14,7 +14,7 @@ namespace HelloWorld
             {
                 factorial *= i;
             }
-            Console.WriteLine(factorial);
+            Console.WriteLine("The factorial of " + userInput + " is " + factorial);
 
 
         }
