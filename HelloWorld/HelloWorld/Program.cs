@@ -6,21 +6,17 @@ namespace HelloWorld
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter a number from 1-10: ");        
-            int userInput = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Input your first number");
+            int num1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Input your second number");
+            int num2 = Convert.ToInt32(Console.ReadLine());
 
-            if(userInput >= 1 && userInput <= 10)
-            {
-                Console.WriteLine("Valid");
-            }
-            else
-            {
-                Console.WriteLine("Invalid");
-            }
-            
+            Console.WriteLine("The max number of the 2 numbers is: ");
+            Console.WriteLine(Math.Max(num1, num2));
+
 
         }
 
-        }
+    }
     }
 
