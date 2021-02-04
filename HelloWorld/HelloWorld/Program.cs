@@ -6,31 +6,20 @@ namespace HelloWorld
 
         static void Main(string[] args)
         {
-            var sum = 0;
-            while (true)
+            Console.WriteLine("Enter a number: ");
+            var userInput = Convert.ToInt32(Console.ReadLine());
+
+            var factorial = 1;
+            for (var i = userInput; i != 0; i--)
             {
-                Console.WriteLine("Enter a number or type ok to Exit: ");
-                var userInput = Console.ReadLine();
-
-                if(userInput.ToLower() == "ok")
-                {
-                    break;
-                }
-                sum += Convert.ToInt32(userInput);
-
+                factorial *= i;
             }
-            Console.WriteLine("The sum of the numbers entered is " + sum);
-
-
-
-
-
-
-
+            Console.WriteLine(factorial);
 
 
         }
-
     }
 }
+
+
 
