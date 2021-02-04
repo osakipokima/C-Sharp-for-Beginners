@@ -6,17 +6,27 @@ namespace HelloWorld
 
         static void Main(string[] args)
         {
-            var counter = 0;
-            for (int i = 1; i <= 100; i++)
+            var sum = 0;
+            while (true)
             {
-                if (i % 3 == 0)
-                {
-                    counter += 1;
+                Console.WriteLine("Enter a number or type ok to Exit: ");
+                var userInput = Console.ReadLine();
 
+                if(userInput.ToLower() == "ok")
+                {
+                    break;
                 }
+                sum += Convert.ToInt32(userInput);
 
             }
-            Console.WriteLine(counter);
+            Console.WriteLine("The sum of the numbers entered is " + sum);
+
+
+
+
+
+
+
 
 
         }
