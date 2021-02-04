@@ -6,13 +6,24 @@ namespace HelloWorld
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Input your first number");
-            int num1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Input your second number");
-            int num2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the width of the image");
+            int width = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("The max number of the 2 numbers is: ");
-            Console.WriteLine(Math.Max(num1, num2));
+            Console.WriteLine("Enter the height of the image");
+            int height = Convert.ToInt32(Console.ReadLine());
+
+            if(height > width)
+            {
+                Console.WriteLine("This is a portrait image.");
+            }
+            else
+            {
+                Console.WriteLine("This is a landscape image.");
+            }
+
+
+
+
 
 
         }
