@@ -9,21 +9,27 @@ namespace HelloWorld
 
         static void Main(string[] args)
         {
-            var randomNumber = new Random().Next(1, 10);
-            Console.WriteLine("Secret is " + randomNumber);
+            Console.WriteLine("Enter a series of numbers seperated by a comma: ");
+            var userInput = (Console.ReadLine());
 
-            for (int i = 0; i <= 3; i++)
+            var numbers = userInput.Split(',');
+
+            var max = Convert.ToInt32(numbers[0]);
+
+            foreach (var str in numbers)
             {
-                Console.WriteLine("Guess a number between 1 - 10: ");
-                var userGuess = Convert.ToInt32(Console.ReadLine());
-                if (userGuess == randomNumber)
-                {
-                    Console.WriteLine("You won!");
-                    return;
-                }
-               
+                var number = Convert.ToInt32(str);
+                if (number > max)
+                    max = number;
             }
-            Console.WriteLine("You lost");
+            Console.WriteLine("Max is " + max);
+
+
+
+
+
+
+
 
 
 
