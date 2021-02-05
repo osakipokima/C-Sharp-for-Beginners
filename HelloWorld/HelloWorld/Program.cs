@@ -1,20 +1,31 @@
 ﻿using System;
+
 namespace HelloWorld
 {
     class program
     {
 
+
+
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter a number: ");
-            var userInput = Convert.ToInt32(Console.ReadLine());
+            var randomNumber = new Random().Next(1, 10);
+            Console.WriteLine("Secret is " + randomNumber);
 
-            var factorial = 1;
-            for (var i = userInput; i != 0; i--)
+            for (int i = 0; i <= 3; i++)
             {
-                factorial *= i;
+                Console.WriteLine("Guess a number between 1 - 10: ");
+                var userGuess = Convert.ToInt32(Console.ReadLine());
+                if (userGuess == randomNumber)
+                {
+                    Console.WriteLine("You won!");
+                    return;
+                }
+               
             }
-            Console.WriteLine("The factorial of " + userInput + " is " + factorial);
+            Console.WriteLine("You lost");
+
+
 
 
         }
