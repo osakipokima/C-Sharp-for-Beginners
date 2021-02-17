@@ -11,49 +11,50 @@ namespace HelloWorld
 
         static void Main(string[] args)
         {
-            Console.WriteLine(GetDay(89));
-                                             
-        }
-        static string GetDay (int dayNum)
-        {
-            string dayName;
-
-            switch (dayNum)
+            //declaring variables for guess game
+            string secertWord = "doge";
+            string guess = "";
+            int guestCount = 0;
+            int guestLimit = 3;
+            bool outOfGuesses = false;
+            //User has a max of 3 guesses to guess the word otherwise they lose
+            do
             {
-                case 0:
-                    dayName = "Sunday";
-                    break;
-                case 1:
-                    dayName = "Monday";
-                    break;
-                case 2:
-                    dayName = "Tuesday";
-                    break;
-                case 3:
-                    dayName = "Wednesday";
-                    break;
-                case 4:
-                    dayName = "Thursday";
-                    break;
-                case 5:
-                    dayName = "Friday";
-                    break;
-                case 6:
-                    dayName = "Saturday";
-                    break;
-                default:
-                    dayName = "Invalid Day Number";
-                        break;                    
-            }
+                // incrementing guest count based on user's answer
+                if (guestCount < guestLimit)
+                {
+                    Console.WriteLine("Enter a guess: ");
+                    guess = Console.ReadLine();
+                    guestCount++;
+                }
+                else
+                {
+                    outOfGuesses = true;
+                }
+                // looping until the user has run out of guesses and hasn't guessed the word
+            } while (guess != secertWord && !outOfGuesses);
+            
+            //print whenther the user has won or lost
+            if (outOfGuesses)
+            {
+                Console.WriteLine("You Lose!");
 
-            return dayName;
+            }
+            else
+            {
+                Console.WriteLine("You Win!");
+
+            }
+            Console.ReadLine();
+
+
+
         }
 
-           
 
 
 
-        
+
     }
 }
 
