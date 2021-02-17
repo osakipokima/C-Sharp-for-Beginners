@@ -11,47 +11,42 @@ namespace HelloWorld
 
         static void Main(string[] args)
         {
-            //first number from user
-            Console.Write("Enter a Number: ");
-            double num1 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine(GetDay(89));
+                                             
+        }
+        static string GetDay (int dayNum)
+        {
+            string dayName;
 
-            //type of computation
-            Console.Write("Enter Operator: ");
-            string op = Console.ReadLine();
-
-            //second number from user
-            Console.Write("Enter a Number: ");
-            double num2 = Convert.ToDouble(Console.ReadLine());
-
-            //adding
-            if (op == "+")
+            switch (dayNum)
             {
-                Console.Write(num1 + num2);
-
-            } //subtracting 
-            else if (op == "-")
-            {
-                Console.WriteLine(num1 - num2);
-            }
-            //dividing
-            else if (op == "/") 
-            {
-                Console.WriteLine(num1 / num2);
-
-            } // multiplying 
-            else if (op == "*")
-            {
-                Console.WriteLine(num1 * num2);
-            }
-            else
-            {
-                Console.WriteLine("Invalid Operator");
+                case 0:
+                    dayName = "Sunday";
+                    break;
+                case 1:
+                    dayName = "Monday";
+                    break;
+                case 2:
+                    dayName = "Tuesday";
+                    break;
+                case 3:
+                    dayName = "Wednesday";
+                    break;
+                case 4:
+                    dayName = "Thursday";
+                    break;
+                case 5:
+                    dayName = "Friday";
+                    break;
+                case 6:
+                    dayName = "Saturday";
+                    break;
+                default:
+                    dayName = "Invalid Day Number";
+                        break;                    
             }
 
-
-
-
-
+            return dayName;
         }
 
            
