@@ -1,42 +1,67 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace HelloWorld
 {
-    class program
+    class Program
     {
-
-
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter a series of numbers seperated by a comma: ");
-            var userInput = (Console.ReadLine());
+            //first number from user
+            Console.Write("Enter a Number: ");
+            double num1 = Convert.ToDouble(Console.ReadLine());
 
-            var numbers = userInput.Split(',');
+            //type of computation
+            Console.Write("Enter Operator: ");
+            string op = Console.ReadLine();
 
-            var max = Convert.ToInt32(numbers[0]);
+            //second number from user
+            Console.Write("Enter a Number: ");
+            double num2 = Convert.ToDouble(Console.ReadLine());
 
-            foreach (var str in numbers)
+            //adding
+            if (op == "+")
             {
-                var number = Convert.ToInt32(str);
-                if (number > max)
-                    max = number;
+                Console.Write(num1 + num2);
+
+            } //subtracting 
+            else if (op == "-")
+            {
+                Console.WriteLine(num1 - num2);
             }
-            Console.WriteLine("Max is " + max);
+            //dividing
+            else if (op == "/") 
+            {
+                Console.WriteLine(num1 / num2);
 
-
-
-
-
-
+            } // multiplying 
+            else if (op == "*")
+            {
+                Console.WriteLine(num1 * num2);
+            }
+            else
+            {
+                Console.WriteLine("Invalid Operator");
+            }
 
 
 
 
 
         }
+
+           
+
+
+
+        
     }
 }
+
 
 
 
